@@ -1,0 +1,31 @@
+/*
+width
+color
+style
+*/
+
+h1{
+	color: #FFFFFF;
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 8px dashed blue;
+}
+
+li{
+	color: rgb(255, 255, 255);
+	background: #FF00FF;
+}
+
+h4{
+	color: rgba(0, 200, 100, 0.2);
+}
+
+body{
+	/*background: url(https://xxxymovies.com/contents/videos_screenshots/176000/176233/preview.jpg);*/
+	/*background: url(https://wallimpex.com/data/out/764/mkbhd-wallpaper-1080p-11127738.jpg);*/
+	background: pink;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

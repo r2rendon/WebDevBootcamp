@@ -1,0 +1,33 @@
+/*S P E C I F I C I T Y*/
+
+/*Type Selectors*/
+
+li{
+	
+}
+
+li a{
+
+}
+
+li+a{
+
+}
+
+/*Class, Attribute, and Pseudo-Slass Selectors*/
+
+.highlight{
+
+}
+
+input[type="text"]{
+
+}
+
+
+
+/*ID Selectors*/
+
+#id{
+
+}

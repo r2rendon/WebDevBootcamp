@@ -1,0 +1,61 @@
+/*Date color: #3498DB*/
+/*h2 color: #2C3E50*/
+/*font: source sans pro*/
+
+body{
+	font-family: Source Sans Pro;
+	border: 20px solid #bdc3c7;
+	padding: 20px;
+	max-width: 700px ;
+	width: 80%;
+	margin: 20px auto;
+	line-height: 20px;
+}
+
+h2{
+	color: #2C3E50;
+	font-size: 2.0rem;
+}
+
+p{
+	text-align: justify;
+}
+
+.date{
+	text-transform: uppercase;
+	color: deepskyblue;
+	letter-spacing: 0.2rem;
+}
+
+.quote{
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+.lastP{
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 15px;
+}
+
+hr{
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.post{
+	margin-bottom: 20px;
+}
