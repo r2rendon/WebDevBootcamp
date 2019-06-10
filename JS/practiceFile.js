@@ -91,20 +91,111 @@
 // var wat = kebabToSnake("Hello-People");
 // console.log(wat);
 
-var todos = [];
-window.setTimeout(function(){
-	var input = "", newTodo = "";
-	while(input !== "quit")
+//----------------> T O D O  L I S T <----------------
+
+// var todos = [];
+
+// //Function used in the ForEach to print the Todo list.
+// function printTodo(x, i)
+// {
+// 	console.log((i+1)+": "+x);
+// }
+
+// //Function used to print the actual Todos.
+// function listTodos()
+// {
+// 	console.log("******************");
+// 	todos.forEach(printTodo);
+// 	console.log("******************");
+// }
+
+// //Function used to add a new todo to the Todo list.
+// function addTodo()
+// {
+// 	var newTodo = "";
+// 	newTodo = prompt("What is your new Todo?");
+// 	todos.push(newTodo);
+// 	alert(newTodo+" added to the Todo list.");
+// }
+
+// //Function used to delete a Todo from the Todo list.
+// function deleteTodoFromArray()
+// {
+// 	var deleteTodo = "";
+// 	deleteTodo = prompt("Please enter the index of the todo to delete.");
+// 	var strDisplay = todos[deleteTodo-1];
+// 	todos.splice(deleteTodo-1, 1);
+// 	alert(strDisplay+" Todo deleted.");
+// }
+
+// window.setTimeout(function(){
+// 	var input = "";
+// 	while(input !== "quit")
+// 	{
+// 		input = prompt("What would you like to do?");
+// 		if(input === "new")
+// 			addTodo();
+// 		else if(input === "list")
+// 			listTodos();
+// 		else if(input === "delete")
+// 			deleteTodoFromArray();
+// 	}
+// 	alert("You quitted the app.");
+// }, 50);
+
+// ====== A R R A Y  P R O B L E M  S E T ======
+
+function printReverse(x)
+{
+	for(var i = x.length-1; i >= 0; i--)
+		console.log(x[i]);
+	
+}
+
+var arr = ["Pablo", "Estas", "Como"];
+
+printReverse(arr);
+console.log("\n\n");
+
+function isUniform(x)
+{
+	var cmpr = x[0];
+	for(var i = 0; i < x.length; i++)
 	{
-		input = prompt("What would you like to do?");
-		if(input === "new")
-		{
-			newTodo = prompt("What is your new Todo?");
-			todos.push(newTodo);
-		}
-		else if(input === "list")
-			console.log(todos);
-			
+		if(cmpr !== x[i])
+			return false;
 	}
-}, 50);
-alert("You quitted the app.");
+
+	return true;
+
+}
+
+arr = ["Hola", "Hola", "Hola", "Hola", "Hola"];
+console.log(isUniform(arr)+"\n\n");
+
+function sumArray(x)
+{
+	var sum = 0;
+	for(var i = 0; i < x.length; i++)
+		sum+=x[i];
+	
+	return sum;
+}
+
+arr = [2, 3, 5, 20];
+console.log(sumArray(arr)+"\n\n");
+
+function max(x)
+{
+	var maxN = 0;
+	for(var i = 0; i < x.length; i++)
+	{
+		if(x[i] > maxN)
+			maxN = x[i];
+	}
+
+	return maxN;
+}
+
+arr = [2, 2, 10, 230, 43];
+console.log(max(arr));
