@@ -177,7 +177,11 @@ function sumArray(x)
 {
 	var sum = 0;
 	for(var i = 0; i < x.length; i++)
+	{
+		if(!Number.isInteger(x[i]))
+			return -1;
 		sum+=x[i];
+	}
 	
 	return sum;
 }
@@ -190,6 +194,7 @@ function max(x)
 	var maxN = 0;
 	for(var i = 0; i < x.length; i++)
 	{
+		if(!Number.isInteger(x[i]))
 		if(x[i] > maxN)
 			maxN = x[i];
 	}
