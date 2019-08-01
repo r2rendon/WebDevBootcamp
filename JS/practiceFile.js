@@ -204,3 +204,4 @@ function max(x)
 
 arr = [2, 2, 10, 230, 43];
 console.log(max(arr));
+
